@@ -137,6 +137,7 @@ export async function getAssessments() {
   });
 
   if (!user) throw new Error("User not found");
+  
 
   try {
     const assessments = await db.assessment.findMany({
